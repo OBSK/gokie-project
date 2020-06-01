@@ -1,0 +1,22 @@
+type Products {
+    id: ID!,
+    code: String!,
+    name: String!,
+    price: Int!,
+    priceDiscount: Int!,
+    image: String!,
+    tax: Int,
+    cost: Int,
+    taxMethod: Int,
+    quantity: Int,
+    barCode: String,
+    type: String,
+    details: String
+    alertQuantity: Int,
+    category: Category
+
+}
+
+extend type Query {
+    findAllProducts: [Products]!
+}

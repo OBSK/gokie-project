@@ -1,0 +1,12 @@
+type Category {
+    id: ID!,
+    code: String!,
+    name: String!,
+    visible: String!,
+    image: String!
+}
+
+# Root 
+type Query {
+    findAllCategories: [Category]!
+}
