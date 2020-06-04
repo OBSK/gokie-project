@@ -7,7 +7,9 @@ import com.gokiesoft.rest.repository.CategoryRepository;
 import com.gokiesoft.rest.repository.ProductRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Query implements GraphQLQueryResolver {
     private ProductRepository productRepository;
     private CategoryRepository categoryRepository;
